@@ -2,7 +2,7 @@ name: run paper.py
 
 on:
   schedule:
-    - cron: '50 9 * * *' # At 00:00 on Monday
+    - cron: '3 10 * * *' # At 00:00 on Monday
 
 jobs:
   build:
@@ -24,4 +24,5 @@ jobs:
         run: python paper.py
         
       - name: execute ds script # run main.py
-        run: python discord_image.py 
+        run: |
+          Auth_KEY = ${{secrets.Auth_KEY}}, CHANNEL_KEY = S{{secrets.CHANNEL_KEY}} python discord_image.py 
