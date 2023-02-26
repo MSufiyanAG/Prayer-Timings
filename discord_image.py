@@ -1,4 +1,5 @@
 import requests
+import os
 
 payload= {
     'content' : 'image_bytes', 
@@ -10,8 +11,8 @@ files = {
 }
 
 header= {
-    'authorization': ${{ secrets.Auth_KEY }}
+    'authorization': os.environ['Auth_KEY']
 }
 
-r2 = requests.post( ${{ secrets.CHANNEL_KEY }},
+r = requests.post( os.environ['CHANNEL_KEY'],
                     headers=header,files=files)
