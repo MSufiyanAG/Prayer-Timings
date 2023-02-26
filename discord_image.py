@@ -1,4 +1,5 @@
 import requests
+import time
 import os
 
 payload= {
@@ -15,6 +16,8 @@ header= {
 
 r1 = requests.post(os.environ['CHANNEL_KEY'],
                     data=payload,headers=header)
+
+time.sleep(60)
 
 r2 = requests.post( os.environ['CHANNEL_KEY'],
                     headers=header,files=files)
