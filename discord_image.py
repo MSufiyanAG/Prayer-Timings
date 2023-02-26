@@ -10,8 +10,8 @@ files = {
 }
 
 header= {
-    'authorization': Auth_KEY
+    'authorization': ${{ secrets.Auth_KEY }}
 }
 
-r2 = requests.post(CHANNEL_KEY,
+r2 = requests.post( ${{ secrets.CHANNEL_KEY }},
                     headers=header,files=files)
