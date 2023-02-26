@@ -3,7 +3,7 @@ import time
 import os
 
 payload= {
-    'content' : '!clear 10', 
+    'content' : '!clear 99', 
 }
 
 files = {
