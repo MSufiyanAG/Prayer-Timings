@@ -24,7 +24,7 @@ r2 = requests.post( os.environ['CHANNEL_KEY'],
 
 ## from here every Friday Surah Baqara image will also go to discord chat.
 files = {
-    "file": ("./SurahBqarah.jpg", open("./SurahBqarah.jpg", 'rb'))
+    "file": ("./SurahBaqarah.jpg", open("./SurahBaqarah.jpg", 'rb'))
 }
 
 time.sleep(60)
