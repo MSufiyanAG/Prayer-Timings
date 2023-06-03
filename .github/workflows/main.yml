@@ -25,6 +25,6 @@ jobs:
         
       - name: execute ds script # run main.py
         env: 
-          Auth_KEY : ${{secrets.Auth_KEY}}
-          CHANNEL_KEY : ${{secrets.CHANNEL_KEY}}
+          Auth_KEY : ${{secrets.Auth_KEY}} #github key
+          CHANNEL_KEY : ${{secrets.CHANNEL_KEY}} #github channel
         run: python discord_image.py 
