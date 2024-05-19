@@ -2,7 +2,7 @@ name: run paper.py
 
 on:
   schedule:
-    - cron: '30 4 * * *' # At 30 4 on Monday
+    - cron: '30 9 * * *' # At 30 4 on Monday
 
 jobs:
   build:
