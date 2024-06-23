@@ -4,7 +4,7 @@ from datetime import date
 
 today = str(date.today())
 
-base_url = 'https://epaper.munsifdaily.com/wp-content/uploads/' + today.split('-')[0] +'/'+ today.split('-')[1] +'/'+ today.split('-')[2] +'/'+  today.split('-')[2] +'_'+ today.split('-')[1] +'_'+ today.split('-')[0] + '_m2_03.jpg'
+base_url = 'https://epaper.munsifdaily.com/wp-content/uploads/' + today.split('-')[0] +'/'+ today.split('-')[1] +'/'+ today.split('-')[2] +'/'+  today.split('-')[2] +'_'+ today.split('-')[1] +'_'+ today.split('-')[0] + '_m2_04.jpg'
 
 img_data = requests.get(base_url).content 
 with open('netflix.jpeg', 'wb') as handler: 
